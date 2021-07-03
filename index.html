@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <article>
+        <form action="/" method="GET" class="r-form">
+            <section class="F-L-name">
+                <label>
+                    <input 
+                    placeholder="First Name"
+                    name="First Name"
+                    required
+                    autofocus
+                    autocomplete="name"
+                    type="text">
+                </label>
+                <label>
+                    <input 
+                    placeholder="Last Name"
+                    name="Last Name"
+                    required
+                    autofocus
+                    autocomplete="family-name"
+                    type="text">
+                </label>
+
+
+                
+            </section>
+            <label>
+                <input 
+                placeholder="Email"
+                name="Email"
+                required
+                autofocus
+                autocomplete="email"
+                pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+                title="User@gmail.com"
+                type="text">
+            </label>
+            <label>
+                <input 
+                placeholder="Password"
+                name="Password"
+                required
+                autofocus
+                autocomplete="current-password"
+                type="password">
+            </label>
+            <label>
+                <input 
+                placeholder="Confirm Password"
+                name="Confirm Password"
+                required
+                autofocus
+                autocomplete="current-password"
+                type="password">
+            </label>
+            <label>
+                <input 
+                type="checkbox"
+                required
+                name="terms"
+                >
+                I accept the Terms of Use & Privacy Policy
+            </label>
+            <button>
+                Register Now
+            </button>
+        </form>
+    </article>
+</body>
+</html>
