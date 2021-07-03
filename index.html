@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration form</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <article>
-        <form action="/" method="GET" class="r-form">
-            <section class="F-L-name">
-                <label>
-                    <input 
-                    placeholder="First Name"
-                    name="First Name"
-                    required
-                    autofocus
-                    autocomplete="name"
-                    type="text">
-                </label>
-                <label>
-                    <input 
-                    placeholder="Last Name"
-                    name="Last Name"
-                    required
-                    autofocus
-                    autocomplete="family-name"
-                    type="text">
-                </label>
-
-
-                
-            </section>
+      <form action="/" method="GET" class="r-form">
+        <div class="container">
+          <hr />
+          <h1>Register</h1>
+        </div>
+        <p>Create your account. It's free and only takes a minute.</p>
+        <section class="qwe">
+          <section class="F-L-name">
             <label>
-                <input 
+              <input
+                class="name"
+                placeholder="First Name"
+                name="First Name"
+                required
+                autofocus
+                autocomplete="name"
+                type="text"
+              />
+            </label>
+            <label>
+              <input
+                class="l-name"
+                placeholder="Last Name"
+                name="Last Name"
+                required
+                autofocus
+                autocomplete="family-name"
+                type="text"
+              />
+            </label>
+          </section>
+          <section>
+            <label>
+              <input
                 placeholder="Email"
                 name="Email"
                 required
@@ -42,38 +50,39 @@
                 autocomplete="email"
                 pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
                 title="User@gmail.com"
-                type="text">
+                type="text"
+              />
             </label>
-            <label>
-                <input 
+            <label class="pas">
+              <input
                 placeholder="Password"
                 name="Password"
                 required
                 autofocus
                 autocomplete="current-password"
-                type="password">
+                type="password"
+              />
             </label>
             <label>
-                <input 
+              <input
                 placeholder="Confirm Password"
                 name="Confirm Password"
                 required
                 autofocus
                 autocomplete="current-password"
-                type="password">
+                type="password"
+              />
             </label>
             <label>
-                <input 
-                type="checkbox"
-                required
-                name="terms"
-                >
+              <div>
+                <input type="checkbox" required name="terms" />
                 I accept the Terms of Use & Privacy Policy
+              </div>
             </label>
-            <button>
-                Register Now
-            </button>
-        </form>
+            <button>Register Now</button>
+          </section>
+        </section>
+      </form>
     </article>
-</body>
+  </body>
 </html>
