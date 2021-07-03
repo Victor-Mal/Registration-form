@@ -23,7 +23,7 @@ h1 {
     position: absolute;
     text-align: center;
     top: -30px;
-    left: 115px;
+    left: 27%;
     padding: 0 10px;
     background-color: rgb(226, 232, 235);
 }
@@ -50,4 +50,9 @@ button {
     color: #ffffff;
     font-size: 1.1rem;
     margin: 10px 0;
+}
+@media screen and (max-width:450px) {
+    .F-L-name {
+        flex-flow: column;
+    }
 }
